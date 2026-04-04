@@ -9,6 +9,7 @@ set signcolumn=number
 "java home path
 let $JAVA_HOME="/opt/homebrew/opt/openjdk"
 let $PATH="/opt/homebrew/opt/openjdk/bin:" . $PATH
+let g:coc_start_at_startup = 0
 
 "let mapleader = "\<Space>"
  
@@ -127,6 +128,7 @@ Plug 'rockyzhang24/arctic.nvim'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'doums/darcula'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
 " Enable clangd with coc
 "let g:coc_global_extensions = ['coc-clangd']
 "
@@ -141,13 +143,14 @@ call plug#end()
 " Colorscheme
 syntax enable
 set termguicolors
-set background=light
+set background=dark
 "colorscheme solarized8_light
 "colorscheme Monokai
 "colorscheme codedark
 "colorscheme default
 "colorscheme macvim
-colorscheme mac_classic
+let g:gruvbox_contrast_dark = 'medium'
+colorscheme gruvbox
 "colorscheme darcula
 "colorscheme dark_plus 
 "colorscheme jellybeans
