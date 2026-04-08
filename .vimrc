@@ -74,7 +74,7 @@ set cmdheight=1
 set updatetime=300
 set shortmess+=c
 
-set signcolumn=auto
+set signcolumn=yes
 
 let $JAVA_HOME="/opt/homebrew/opt/openjdk"
 let $PATH="/opt/homebrew/opt/openjdk/bin:" . $PATH
